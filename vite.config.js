@@ -8,7 +8,6 @@ import { defineConfig } from 'vite'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import vuetify from 'vite-plugin-vuetify'
-import analyze from 'rollup-plugin-analyzer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -53,9 +52,6 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 5000,
-    rollupOptions: {
-      plugins: [analyze()],
-    },
   },
   optimizeDeps: {
     exclude: ['vuetify'],
