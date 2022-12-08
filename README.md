@@ -17,19 +17,21 @@ However, if you wish to get actual prop types in `.vue` imports (for example to 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
+### yarn must be version >= 1.22.19
+### NODE.JS must be version >= 16.16.0
 
 ```sh
-npm install
+yarn install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+yarn dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-npm run build
+yarn build
 ```
